@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50" fill="none">
+  <defs>
+    <linearGradient id="saffronBlueW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFa040"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- AI Brain / Neural Network Mark -->
+  <g transform="translate(5, 3)">
+    <path d="M22 8 L34 15 L34 29 L22 36 L10 29 L10 15 Z" fill="white" opacity="0.06"/>
+    <path d="M22 8 L34 15 L34 29 L22 36 L10 29 L10 15 Z" stroke="url(#saffronBlueW)" stroke-width="1.5" fill="none" opacity="0.6"/>
+
+    <!-- Neural connection lines - saffron (top) -->
+    <line x1="22" y1="22" x2="6" y2="10" stroke="#FFa040" stroke-width="1.2" opacity="0.35"/>
+    <line x1="22" y1="22" x2="38" y2="10" stroke="#FFa040" stroke-width="1.2" opacity="0.35"/>
+    <line x1="22" y1="22" x2="22" y2="2" stroke="#FFa040" stroke-width="1.2" opacity="0.35"/>
+
+    <!-- Neural connection lines - blue (bottom) -->
+    <line x1="22" y1="22" x2="6" y2="34" stroke="#60a5fa" stroke-width="1.2" opacity="0.35"/>
+    <line x1="22" y1="22" x2="38" y2="34" stroke="#60a5fa" stroke-width="1.2" opacity="0.35"/>
+    <line x1="22" y1="22" x2="22" y2="42" stroke="#60a5fa" stroke-width="1.2" opacity="0.35"/>
+
+    <!-- Outer nodes - saffron (top) -->
+    <circle cx="6" cy="10" r="2.5" fill="#FFa040"/>
+    <circle cx="38" cy="10" r="2.5" fill="#FFa040"/>
+    <circle cx="22" cy="2" r="2.5" fill="#FFb060"/>
+
+    <!-- Outer nodes - blue (bottom) -->
+    <circle cx="6" cy="34" r="2.5" fill="#60a5fa"/>
+    <circle cx="38" cy="34" r="2.5" fill="#60a5fa"/>
+    <circle cx="22" cy="42" r="2.5" fill="#60a5fa"/>
+
+    <!-- Hexagon nodes - top saffron -->
+    <circle cx="22" cy="8" r="2" fill="#FFa040"/>
+    <circle cx="34" cy="15" r="2" fill="url(#saffronBlueW)"/>
+    <circle cx="10" cy="15" r="2" fill="url(#saffronBlueW)"/>
+
+    <!-- Hexagon nodes - bottom blue -->
+    <circle cx="34" cy="29" r="2" fill="url(#saffronBlueW)"/>
+    <circle cx="22" cy="36" r="2" fill="#60a5fa"/>
+    <circle cx="10" cy="29" r="2" fill="url(#saffronBlueW)"/>
+
+    <!-- Central core -->
+    <circle cx="22" cy="22" r="4.5" fill="url(#saffronBlueW)"/>
+    <circle cx="22" cy="22" r="2.5" fill="white" opacity="0.9"/>
+  </g>
+
+  <!-- Company Name Text - White version -->
+  <text x="58" y="21" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="white" letter-spacing="-0.5">
+    Inferova
+  </text>
+  <text x="58" y="39" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="white" opacity="0.65" letter-spacing="3.5">
+    TECHNOLOGIES
+  </text>
+
+  <!-- Accent line - saffron to blue -->
+  <rect x="58" y="24" width="15" height="1.5" rx="0.75" fill="#FFa040" opacity="0.5"/>
+  <rect x="73" y="24" width="15" height="1.5" rx="0.75" fill="#60a5fa" opacity="0.5"/>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="saffronBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B00"/>
+      <stop offset="100%" style="stop-color:#1a56db"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Central hexagonal shape -->
+  <path d="M24 6 L38 14 L38 30 L24 38 L10 30 L10 14 Z" fill="url(#saffronBlue)" opacity="0.1"/>
+  <path d="M24 6 L38 14 L38 30 L24 38 L10 30 L10 14 Z" stroke="url(#saffronBlue)" stroke-width="1.5" fill="none"/>
+
+  <!-- Neural connection lines - saffron (top) -->
+  <line x1="24" y1="22" x2="6" y2="8" stroke="#FF8C00" stroke-width="1.2" opacity="0.45"/>
+  <line x1="24" y1="22" x2="42" y2="8" stroke="#FF8C00" stroke-width="1.2" opacity="0.45"/>
+  <line x1="24" y1="22" x2="24" y2="1" stroke="#FF8C00" stroke-width="1.2" opacity="0.45"/>
+
+  <!-- Neural connection lines - blue (bottom) -->
+  <line x1="24" y1="22" x2="6" y2="36" stroke="#2563eb" stroke-width="1.2" opacity="0.45"/>
+  <line x1="24" y1="22" x2="42" y2="36" stroke="#2563eb" stroke-width="1.2" opacity="0.45"/>
+  <line x1="24" y1="22" x2="24" y2="46" stroke="#2563eb" stroke-width="1.2" opacity="0.45"/>
+
+  <!-- Outer nodes - saffron (top) -->
+  <circle cx="6" cy="8" r="3" fill="#FF7A00"/>
+  <circle cx="42" cy="8" r="3" fill="#FF7A00"/>
+  <circle cx="24" cy="1" r="2.5" fill="#FF8C00"/>
+
+  <!-- Outer nodes - blue (bottom) -->
+  <circle cx="6" cy="36" r="3" fill="#2563eb"/>
+  <circle cx="42" cy="36" r="3" fill="#2563eb"/>
+  <circle cx="24" cy="46" r="2.5" fill="#2563eb"/>
+
+  <!-- Hexagon vertex nodes - top saffron -->
+  <circle cx="24" cy="6" r="2.5" fill="#FF7A00"/>
+  <circle cx="38" cy="14" r="2.5" fill="url(#saffronBlue)"/>
+  <circle cx="10" cy="14" r="2.5" fill="url(#saffronBlue)"/>
+
+  <!-- Hexagon vertex nodes - bottom blue -->
+  <circle cx="38" cy="30" r="2.5" fill="url(#saffronBlue)"/>
+  <circle cx="24" cy="38" r="2.5" fill="#1a56db"/>
+  <circle cx="10" cy="30" r="2.5" fill="url(#saffronBlue)"/>
+
+  <!-- Central core - white nova -->
+  <circle cx="24" cy="22" r="6" fill="url(#saffronBlue)"/>
+  <circle cx="24" cy="22" r="3.5" fill="white"/>
+  <circle cx="24" cy="22" r="1.5" fill="url(#saffronBlue)" opacity="0.6"/>
+</svg>
