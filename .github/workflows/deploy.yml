@@ -19,18 +19,8 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            # Find the web root
-            WEB_ROOT=$(find /home -maxdepth 3 -name "public_html" -type d 2>/dev/null | head -1)
-            if [ -z "$WEB_ROOT" ]; then
-              echo "public_html not found, listing home directory:"
-              ls -la ~/
-              ls -la /home/
-              exit 1
-            fi
-            echo "Web root: $WEB_ROOT"
-            cd "$WEB_ROOT"
-            if [ ! -d ".git" ]; then
-              git clone https://github.com/shashankkatyayan/inferova.git .
-            else
-              git pull origin main
-            fi
+            echo "=== Exploring directory structure ==="
+            ls -la ~/
+            echo "=== Looking for domains ==="
+            find ~/ -maxdepth 4 -type d -name "public_html" 2>/dev/null || true
+            find ~/ -maxdepth 3 -type d 2>/dev/null || true
