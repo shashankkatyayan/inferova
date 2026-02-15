@@ -20,8 +20,11 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd ~/domains/inferova.com/public_html
-            if [ ! -d ".git" ]; then
-              git clone https://github.com/shashankkatyayan/inferova.git .
-            else
+            if [ -d ".git" ]; then
               git pull origin main
+            else
+              git init
+              git remote add origin https://github.com/shashankkatyayan/inferova.git
+              git fetch origin
+              git checkout -f main
             fi
