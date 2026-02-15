@@ -19,8 +19,9 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            echo "=== Exploring directory structure ==="
-            ls -la ~/
-            echo "=== Looking for domains ==="
-            find ~/ -maxdepth 4 -type d -name "public_html" 2>/dev/null || true
-            find ~/ -maxdepth 3 -type d 2>/dev/null || true
+            cd ~/domains/inferova.com/public_html
+            if [ ! -d ".git" ]; then
+              git clone https://github.com/shashankkatyayan/inferova.git .
+            else
+              git pull origin main
+            fi
